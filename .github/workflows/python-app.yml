@@ -37,7 +37,7 @@ jobs:
         run: |
           cd project
           ddc-services up -d
-          derex mysql reset
+          derex mysql reset --force
           derex reset-rabbitmq
           derex create-bucket
           derex build final
